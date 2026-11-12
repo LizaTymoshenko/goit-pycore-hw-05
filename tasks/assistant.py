@@ -47,6 +47,7 @@ def show_phone(args, contacts):
     phone = contacts[name]
     return phone
 
+@input_error
 def show_all(contacts):
     if not contacts:
         return "Contact book is empty."
